@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'python algorithm.py'
+        sh 'python /var/lib/jenkins/workspace/testPython/algorithm.py'
       }
     }
 
