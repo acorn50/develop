@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'python /var/lib/jenkins/workspace/develop/algorithm.py'
+        sh 'python /var/lib/jenkins/workspace/develop_main/algorithm.py'
       }
     }
 
