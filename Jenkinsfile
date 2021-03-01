@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('test') {
+      steps {
+        sh 'python /var/lib/jenkins/workspace/testPython/hello.py'
+      }
+    }
+
   }
 }
