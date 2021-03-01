@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('notify') {
+      steps {
+        mail(subject: 'pipeline result', body: 'test for email', to: 'jiangcw@dfmc.com.cn')
+      }
+    }
+
   }
 }
