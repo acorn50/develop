@@ -15,7 +15,7 @@ pipeline {
 
     stage('notify') {
       steps {
-        emailext(subject: 'build and test result', attachLog: true, body: 'build and test result', to: 'jiangcw@dfmc.com.cn')
+        emailext(subject: 'build and test result', attachLog: true, body: '${SCRIPT}', to: 'jiangcw@dfmc.com.cn')
       }
     }
 
