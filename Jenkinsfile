@@ -15,7 +15,7 @@ pipeline {
 
     stage('notify') {
       steps {
-        emailext(body: '$SCRIPT', subject: '$DEFAULT', to: 'jiangcw@dfmc.com.cn', mimeType: 'text/html', attachLog: true, compressLog: true)
+        emailext(body: '$SCRIPT', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!', to: 'jiangcw@dfmc.com.cn', mimeType: 'text/html', attachLog: true, compressLog: true)
       }
     }
 
